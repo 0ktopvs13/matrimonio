@@ -62,9 +62,9 @@ export default function App() {
               className="entrabutton"
               whileHover={{ scale: 1.1, color: "#ffffffff" }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => setEntered(true)}
+              onClick={() => setEntered(false)}
             >
-              Entra
+              Work in progess
             </motion.button>
           </motion.div>
         )}
