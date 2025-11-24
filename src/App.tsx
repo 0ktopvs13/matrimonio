@@ -19,6 +19,7 @@ const sections: SectionItem[] = [
 
 // Importa immagine di sfondo
 import enterImage from "./imgs/enter.jpg";
+import wipImage from "./imgs/wip.jpg";
 
 export default function App() {
   const [entered, setEntered] = useState(false);
@@ -38,7 +39,7 @@ export default function App() {
           >
             {/* Sfondo */}
             <motion.img
-              src={enterImage} // o "/imgs/enter.jpg" se in public
+              src={wipImage} // o "/imgs/enter.jpg" se in public
               alt="Sfondo matrimonio"
               className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
               style={{ zIndex: 1 }}
