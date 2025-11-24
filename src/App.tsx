@@ -64,7 +64,7 @@ export default function App() {
               whileTap={{ scale: 0.95 }}
               onClick={() => setEntered(false)}
             >
-              Work in progess
+             
             </motion.button>
           </motion.div>
         )}
