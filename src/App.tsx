@@ -37,16 +37,22 @@ export default function App() {
             transition={{ duration: 1 }}
           >
             {/* Sfondo */}
-            <motion.img
-              src={wipImage} // o "/imgs/enter.jpg" se in public
-              alt="Sfondo matrimonio"
-              className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-              style={{ zIndex: 1 }}
-              initial={{ filter: "brightness(0)" }}
-              animate={{ filter: "brightness(1)" }}
-              transition={{ duration: 3, ease: "easeOut" }}
-            />
-
+<div className="d-flex justify-content-center align-items-center w-100 h-100">
+  <motion.img
+    src={wipImage}
+    alt="Sfondo matrimonio"
+    style={{
+      maxWidth: "80%",
+      maxHeight: "80%",
+      objectFit: "contain",
+      objectPosition: "center",
+      zIndex: 1,
+    }}
+    initial={{ filter: "brightness(0)" }}
+    animate={{ filter: "brightness(1)" }}
+    transition={{ duration: 3, ease: "easeOut" }}
+  />
+</div>
             {/* Overlay opzionale per scurire inizialmente */}
             <motion.div
               className="position-absolute top-0 start-0 w-100 h-100 bg-black"
