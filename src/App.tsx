@@ -18,7 +18,6 @@ const sections: SectionItem[] = [
 ];
 
 // Importa immagine di sfondo
-import enterImage from "./imgs/enter.jpg";
 import wipImage from "./imgs/wip.jpg";
 
 export default function App() {
